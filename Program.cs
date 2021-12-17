@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace sequencialimite
 {
@@ -9,23 +9,25 @@ namespace sequencialimite
             Console.WriteLine("inicando!");
             int iniciando = Convert.ToInt32(Console.ReadLine());
 
-
             Console.Write(" Fim: ");
             int final = Convert.ToInt32(Console.ReadLine());
-
 
             if (final >= iniciando)
             {
                 int n = iniciando;
 
-                while (n <= final) ;
+                while (n <= final)
+                {
+                    Console.Write($" {n}");
+                    n = n + 1;
+                }
+            }
+            else
+            {
+                Console.WriteLine($"O número inicial não pode ser maior que o final.");
+            }
 
-                Console.WriteLine($" {n}");
-                n = 1 + 1;
+        }
+
     }
-    }
-    
 }
-    }
-
-    
